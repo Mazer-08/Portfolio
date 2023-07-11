@@ -1,7 +1,7 @@
 import React from 'react'
 import {Footer, Header} from './containers'
 import {Navbar, Card} from './components'
-import './app.css'
+import './App.css'
 const App = () => {
   return (
     <div className='App'>

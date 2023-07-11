@@ -1,0 +1,147 @@
+.navbar-wrapper{
+    /* layout */
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    padding: 2rem 5rem;
+
+    background-color: var(--color-bg);
+    
+    font-family: var(--font-family);
+    color: var(--color-text);
+}
+
+
+.navbar-brand{
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+.navbar-menu{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar-menu .links{
+    width: 100%;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.navbar-menu .links>a{
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+
+.navbar-menu-mobile{
+    grid-column-start: 3;
+    display: none;
+    position: relative;
+    right: 0rem;
+    top: 0rem;
+}
+/* to fix button hilne wala issue */
+.navbar-menu-mobile-container{
+    position: absolute;
+    top: 1.75rem;
+    right: 0rem;
+
+    background-color: var(--color-text);
+    border-radius: 4px;
+    padding: 0.5em 1em;
+}
+.navbar-menu-mobile .links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    text-align: end;
+}
+.navbar-menu-mobile .links>a{
+    color: var(--color-bg);
+}
+
+
+
+
+@media screen and (max-width:768px){
+    
+    .navbar-wrapper{
+        grid-template-columns: 2fr 0.25fr;
+        padding: 2rem 6rem;
+    }
+
+    .navbar-brand{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .navbar-menu{
+        display: none;
+    }
+
+    .navbar-menu-mobile{
+        display: flex;
+
+    }
+}
+
+@media screen and (max-width:550px){
+    
+    .navbar-wrapper{
+        grid-template-columns: 2fr 0.25fr;
+        padding: 2rem 4rem;
+    }
+
+    .navbar-brand{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .navbar-menu{
+        display: none;
+    }
+
+    .navbar-menu-mobile{
+        display: flex;
+
+    }
+}
+
+@media screen and (max-width:400px){
+    
+    .navbar-wrapper{
+        grid-template-columns: 2fr 0.25fr;
+        padding: 2rem 2rem;
+    }
+
+    .navbar-brand{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .navbar-menu{
+        display: none;
+    }
+
+    .navbar-menu-mobile{
+        display: flex;
+
+    }
+}
