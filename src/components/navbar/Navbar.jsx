@@ -4,12 +4,25 @@ import { BiMenu, BiMessageSquareX } from "react-icons/bi";
 const Navbar = () => {
 
   const[toggleMenu, setToggleMenu] = useState(false);
+  const [isactive, setIsactive] = useState(false);  
+
+  const changeBg=()=>{
+    if(window.scrollY>=20)
+        setIsactive(true);
+    else
+        setIsactive(false);
+}
+window.addEventListener('scroll', changeBg);
 
   const Menu=()=>{
+    
     return(
       <div className='links'>
-      <a href="/">About</a>
-      <a href="/">LinkedIn</a>
+      <a href="#project">Project</a>
+      <a href="#skills">Skills</a>
+      <a href="#codingProfiles">Stats</a>
+      <a href="#about">About</a>
+      <a href="https://www.linkedin.com/in/sabhya-kumar-singh-b837a1121/">LinkedIn</a>
       <a href="/">Resume</a>
       </div>
     )
@@ -19,7 +32,7 @@ const Navbar = () => {
     <div className='navbar-wrapper'>
 
       <div className='navbar-brand'>
-        SABHYA KUMAR SINGH
+      <a href="/">SABHYA KUMAR SINGH</a>
       </div>
 
       <div className="navbar-menu">

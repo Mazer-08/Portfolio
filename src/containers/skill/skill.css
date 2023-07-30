@@ -1,0 +1,71 @@
+.container{
+    margin: 0 auto;
+}
+
+.container h1{
+    margin-bottom: 2.7rem;
+    font-family: var(--font-text);
+    font-size: 2.5rem;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+.container .skill{
+    margin: 0 auto;
+}
+.container .skill p{
+    text-align: center;
+    font-family: var(--font-text);
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+
+
+.carousel   {
+	display: flex;
+	background-color: #1A3E8A;
+	border-radius: 10px;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 720px) {
+    .container{
+        margin: 0 2.5rem;
+    }
+    
+    .container h1{
+        margin-bottom: 2.7rem;
+        font-family: var(--font-text);
+        font-size: 1.6rem;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 425px) {
+    .container{
+        margin: 0 0.5rem;
+    }
+    
+    .container h1{
+        margin-bottom: 2.2rem;
+        font-family: var(--font-text);
+        font-size: 1.2rem;
+    }
+}

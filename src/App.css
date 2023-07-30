@@ -64,4 +64,17 @@ a{
       transform: scale(1);
     }
 }
-  
+
+
+.animate_td1{
+    animation-duration: 1sec;
+}
+.animate_td1up{
+    animation-duration: 1.5sec;
+}
+.animate_td2{
+    animation-duration: 10sec;
+}
+.animate_td2up{
+    animation-duration: 2.5sec;
+}

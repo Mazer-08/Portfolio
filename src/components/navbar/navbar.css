@@ -12,6 +12,16 @@
     color: var(--color-text);
 }
 
+#mainNavbarActive{
+    height: 12vh;
+    width: 100%;
+    background: black;
+    display: grid;
+    grid-template-columns: 5rem 1.5fr 0.5fr 3fr 5rem;
+    position: fixed;
+    z-index: 3;
+}
+
 
 .navbar-brand{
     grid-column-start: 1;
@@ -79,7 +89,7 @@
     
     .navbar-wrapper{
         grid-template-columns: 2fr 0.25fr;
-        padding: 2rem 6rem;
+        padding: 2rem 2.5rem;
     }
 
     .navbar-brand{
@@ -96,7 +106,7 @@
 
     .navbar-menu-mobile{
         display: flex;
-
+        z-index: 1;
     }
 }
 
@@ -104,7 +114,7 @@
     
     .navbar-wrapper{
         grid-template-columns: 2fr 0.25fr;
-        padding: 2rem 4rem;
+        padding: 2rem 2.5rem;
     }
 
     .navbar-brand{
@@ -121,7 +131,7 @@
 
     .navbar-menu-mobile{
         display: flex;
-
+        z-index: 1;
     }
 }
 
@@ -129,7 +139,7 @@
     
     .navbar-wrapper{
         grid-template-columns: 2fr 0.25fr;
-        padding: 2rem 2rem;
+        padding: 2rem 0.5rem;
     }
 
     .navbar-brand{
@@ -138,7 +148,7 @@
     
         font-size: 1.2rem;
         font-weight: 400;
-        text-align: center;
+        text-align: left;
     }
 
     .navbar-menu{

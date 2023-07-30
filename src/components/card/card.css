@@ -1,0 +1,56 @@
+.card-container{
+    width: 25rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.card{
+    width: 70%;
+    background-color: var(--color-card);
+}
+
+.card-container .card h5{
+    font-family: var(--font-text);
+    font-size: 2rem;
+    font-weight: 700;
+    color: aliceblue;
+}
+.card-container .card p{
+    font-family: var(--font-text);
+    font-size: 1.3rem;
+    color: aliceblue;
+}
+.card-container .card a{
+    font-family: var(--font-text);
+    color: aliceblue;
+}
+
+
+
+@media screen and (max-width: 768) {
+    .card-container{
+        width: 25rem;
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        width: 70%;
+        background-color: var(--color-card);
+    }
+    .card-container .card h5{
+        /* font-family: var(--font-text); */
+        font-size: 1rem;
+        font-weight: 400;
+        color: aliceblue;
+    }
+    .card-container .card p{
+        font-family: var(--font-text);
+        font-size: 1.4rem;
+        color: aliceblue;
+    }
+    .card-container .card a{
+        font-family: var(--font-text);
+        font-size: 1.2rem;
+        color: aliceblue;
+    }
+}
