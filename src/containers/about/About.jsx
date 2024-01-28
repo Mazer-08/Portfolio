@@ -12,7 +12,7 @@ const About = () => {
             <div className="short">
                 {/* <h1>The Short</h1> */}
                 <br></br>
-                <p>I am a passionate and dedicated frontend developer and web designer currently studying at Indian Institute of Information Technology Surat.</p>
+                <p>I am a passionate and dedicated frontend developer, studying at Indian Institute of Information Technology Surat.</p>
                 <p>Transforming innovative designs into functional and intuitive websites and practicing DSA and Competitive Programming is what I love.</p>
                 <p>I thoroughly enjoy working in teams, exchanging ideas, and collectively bringing visions to life.</p>
                 <p>Thank you, I look forward to connecting with you to discuss potential collaborations and exciting opportunities.</p>

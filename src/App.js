@@ -18,35 +18,35 @@ const App = () => {
       ssrrcc: "images/danceFinal.png",
       ttext: "Designer @ Spring Fiesta",
       dtext: `Spring Fiesta is our college's annual fest.
-      I worked there as a Designer for social media posts.`
+      I contributed there as a Designer for social media posts.`
     },
     {
       id: "3",
       ssrrcc: "images/dramaFinal.png",
       ttext: "Designer @ Spring Fiesta",
       dtext: `Spring Fiesta is our college's annual fest.
-      I worked there as a Designer for social media posts.`
+      I contributed there as a Designer for social media posts.`
     },
     {
       id: "4",
       ssrrcc: "images/musicFinal.png",
       ttext: "Designer @ Spring Fiesta",
       dtext: `Spring Fiesta is our college's annual fest.
-      I worked there as a Designer for social media posts.`
+      I contributed there as a Designer for social media posts.`
     },
     {
       id: "5",
       ssrrcc: "images/pitchIt.jpg",
       ttext: "Designer @ Spring Fiesta",
       dtext: `Spring Fiesta is our college's annual fest.
-      I worked there as a Designer for social media posts.`
+      I contributed there as a Designer for social media posts.`
     },
     {
       id: "6",
       ssrrcc: "images/ideaToMvp.jpg",
       ttext: "Designer @ Spring Fiesta",
       dtext: `Spring Fiesta is our college's annual fest.
-      I worked there as a Designer for social media posts.`
+      I contributed there as a Designer for social media posts.`
     },
   ]
 
@@ -117,7 +117,7 @@ const App = () => {
         </BrowserRouter> */}
         <Navbar/>
         <Header/>
-        <Skill id="project" title="My Project" arr={pro} flag="1" git="https://github.com/Mazer-08/WeatherNow"/>
+        <Skill id="project" title="My Project" arr={pro} flag="1" git="https://weathernowww.netlify.app/"/>
         <Skill id="skills" title="Front-End Skills" arr={dev} flag="1" git="https://mazer-08.github.io/Portfolio/"/>
         <Skill title="Designing Skills" arr={design} flag="0"/>
         <Hero id="codingProfiles"/>
