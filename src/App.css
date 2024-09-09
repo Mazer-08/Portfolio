@@ -14,6 +14,12 @@ a{
     text-decoration: none;
 }
 
+@media screen and (min-with: 768px) {
+    #codingProfiles{
+        width: 100%;
+    }
+}
+
 .scale-in-ver-top {
 	-webkit-animation: scale-in-ver-top 0.4s ;
 	        animation: scale-in-ver-top 0.4s ;
