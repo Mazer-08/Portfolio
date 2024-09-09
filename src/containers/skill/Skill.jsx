@@ -10,7 +10,7 @@ return (
         
         <h1>{props.title}</h1>
 
-        <Carousel className="cwrapper carousel">
+        <Carousel className="cwrapper carousel" style={{width:"95%"}}>
 
             {
                 props.arr.map( (item) => 
