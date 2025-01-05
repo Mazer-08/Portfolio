@@ -19,11 +19,10 @@ window.addEventListener('scroll', changeBg);
     return(
       <div className='links'>
       <a href="#project">Project</a>
-      <a href="#skills">Skills</a>
-      <a href="#codingProfiles">Stats</a>
+      <a href="#codingProfiles">Ranks</a>
       <a href="#about">About</a>
       <a href="https://www.linkedin.com/in/sabhya-kumar-singh-b837a1121/">LinkedIn</a>
-      <a href="/">Resume</a>
+      <a href="https://drive.google.com/drive/u/0/folders/1-3hUQQgm3Z56v8PGpcLZMinlRpU_0jxg">Resume</a>
       </div>
     )
   }

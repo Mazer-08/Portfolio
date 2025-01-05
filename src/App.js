@@ -50,53 +50,62 @@ const App = () => {
     },
   ]
 
-  const dev=[
-    {
-      id: "1",
-      ssrrcc: "images/mobilePortfolio.png",
-      ttext: `Former Portfolio`,
-      dtext:`A completely responsive portfolio made using HTML and CSS.`
-    },
-    {
-      id: "2",
-      ssrrcc: "images/Desktop1.png",
-      ttext: `Former Portfolio`,
-      dtext:`Few snaps of the desktop version.`
-    },
-    {
-      id: "3",
-      ssrrcc: "images/Desktop2.png",
-      ttext: `Former Portfolio`,
-      dtext:`Few snaps of the desktop version.`
-    },
-    {
-      id: "4",
-      ssrrcc: "images/Desktop3.png",
-      ttext: `Former Portfolio`,
-      dtext:`Few snaps of the desktop version.`
-    },
-    {
-      id: "5",
-      ssrrcc: "images/Desktop4.png",
-      ttext: `Former Portfolio`,
-      dtext:`Few snaps of the desktop version.`
-    }
-  ]
+  // const dev=[
+  //   {
+  //     id: "1",
+  //     ssrrcc: "images/mobilePortfolio.png",
+  //     ttext: `Former Portfolio`,
+  //     dtext:`A completely responsive portfolio made using HTML and CSS.`
+  //   },
+  //   {
+  //     id: "2",
+  //     ssrrcc: "images/Desktop1.png",
+  //     ttext: `Former Portfolio`,
+  //     dtext:`Few snaps of the desktop version.`
+  //   },
+  //   {
+  //     id: "3",
+  //     ssrrcc: "images/Desktop2.png",
+  //     ttext: `Former Portfolio`,
+  //     dtext:`Few snaps of the desktop version.`
+  //   },
+  //   {
+  //     id: "4",
+  //     ssrrcc: "images/Desktop3.png",
+  //     ttext: `Former Portfolio`,
+  //     dtext:`Few snaps of the desktop version.`
+  //   },
+  //   {
+  //     id: "5",
+  //     ssrrcc: "images/Desktop4.png",
+  //     ttext: `Former Portfolio`,
+  //     dtext:`Few snaps of the desktop version.`
+  //   }
+  // ]
 
 
   const pro=[
     {
       id: "1",
-      ssrrcc: "images/weathermob.png",
-      ttext: `WeatherNow`,
-      dtext:`A responsive web application which can provide the weather conditions of any city arounf the world.`
+      ssrrcc: "images/referKaro.png",
+      ttext: `ReferKaro`,
+      dtext:`This solution was designed during HackByte2.0, organized by IIIT Jabalpur. The project focused on ensuring user anonymity.`,
+      link: `https://devfolio.co/projects/referkaro-bc17`
     },
     {
       id: "2",
-      ssrrcc: "images/weatherpc.png",
+      ssrrcc: "images/baatcheet.png",
+      ttext: `BaatCheet`,
+      dtext:`A Real-Time chat application. Utilized WebSocket technology to enable real-time messaging, the system supports both one-on-one chats and group chats.`,
+      link: `https://github.com/Mazer-08/BaatCheet`
+    },
+    {
+      id: "3",
+      ssrrcc: "images/weathermob.png",
       ttext: `WeatherNow`,
-      dtext:`A responsive web application which can provide the weather conditions of any city arounf the world.`
-    }
+      dtext:`A responsive web application which can provide the weather conditions of any city around the world.`,
+      link: `https://weathernowww.netlify.app/`
+    },
   ]
   return (
     <div className='App'>
@@ -117,8 +126,8 @@ const App = () => {
         </BrowserRouter> */}
         <Navbar/>
         <Header/>
-        <Skill id="project" title="My Project" arr={pro} flag="1" git="https://weathernowww.netlify.app/"/>
-        <Skill id="skills" title="Front-End Skills" arr={dev} flag="1" git="https://mazer-08.github.io/Portfolio/"/>
+        <Skill id="project" title="My Projects" arr={pro} flag="1"/>
+        {/* <Skill id="skills" title="Front-End Skills" arr={dev} flag="1" git="https://mazer-08.github.io/Portfolio/"/> */}
         <Skill title="Designing Skills" arr={design} flag="0"/>
         <Hero id="codingProfiles"/>
         <About id="about"/>
