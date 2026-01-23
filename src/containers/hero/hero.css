@@ -1,32 +1,37 @@
-.hero-wrapper{
+.hero-wrapper {
     margin: 5rem auto;
     padding-top: 5rem;
+    color: var(--color-text);
 }
-.hero-wrapper h1{
+
+.hero-wrapper h1 {
     margin-bottom: 2.7rem;
     font-family: var(--font-text);
     font-size: 2.5rem;
     text-align: center;
 }
-.cp-card-wrapper{
+
+.cp-card-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
 
-@media screen and (min-width: 720px){
-    .hero-wrapper{
+@media screen and (min-width: 720px) {
+    .hero-wrapper {
         margin: 5rem auto;
         padding-top: 5rem;
     }
-    .hero-wrapper h1{
+
+    .hero-wrapper h1 {
         margin-bottom: 2.7rem;
         font-family: var(--font-text);
         font-size: 2.5rem;
         text-align: center;
     }
-    .cp-card-wrapper{
+
+    .cp-card-wrapper {
         display: flex;
         flex-direction: row;
         align-items: center;

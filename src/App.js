@@ -1,52 +1,56 @@
-import React from 'react'
-import {Footer, Header, Hero, Skill, About} from './containers'
-import {Navbar} from './components'
+import React, { useEffect } from 'react'
+import Lenis from 'lenis'
+import { Footer, Header, Hero, Skill, About } from './containers'
+import { Navbar } from './components'
 import './App.css'
 
 // import {BrowserRouter, Route,Routes} from "react-router-dom"
 
 const App = () => {
+  useEffect(() => {
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+
+    const handleAnchorClick = (e) => {
+      const target = e.target.closest('a');
+      if (target && target.hash && target.hash.startsWith('#') && target.origin === window.location.origin) {
+        e.preventDefault();
+        lenis.scrollTo(target.hash);
+      }
+    };
+
+    document.addEventListener('click', handleAnchorClick);
+
+    return () => {
+      document.removeEventListener('click', handleAnchorClick);
+    }
+  }, [])
+
   const design = [
     {
       id: "1",
-      ssrrcc: "images/GDSC.png",
+      ssrrcc: "images/GDSC_NEW.png",
       ttext: "GDSC Core Team Designer",
       dtext: `I was selected as a Junior Developer in the beginning and later was incorporated in the core team of session 2022-23 as a Designer. I have contributed in conducting sessions and designing schwags and instagram posts with fellow team members.`
     },
     {
       id: "2",
-      ssrrcc: "images/danceFinal.png",
-      ttext: "Designer @ Spring Fiesta",
-      dtext: `Spring Fiesta is our college's annual fest.
-      I contributed there as a Designer for social media posts.`
-    },
-    {
-      id: "3",
-      ssrrcc: "images/dramaFinal.png",
-      ttext: "Designer @ Spring Fiesta",
-      dtext: `Spring Fiesta is our college's annual fest.
-      I contributed there as a Designer for social media posts.`
-    },
-    {
-      id: "4",
-      ssrrcc: "images/musicFinal.png",
-      ttext: "Designer @ Spring Fiesta",
-      dtext: `Spring Fiesta is our college's annual fest.
-      I contributed there as a Designer for social media posts.`
-    },
-    {
-      id: "5",
       ssrrcc: "images/pitchIt.jpg",
       ttext: "Designer @ Spring Fiesta",
       dtext: `Spring Fiesta is our college's annual fest.
       I contributed there as a Designer for social media posts.`
     },
     {
-      id: "6",
-      ssrrcc: "images/ideaToMvp.jpg",
-      ttext: "Designer @ Spring Fiesta",
-      dtext: `Spring Fiesta is our college's annual fest.
-      I contributed there as a Designer for social media posts.`
+      id: "3",
+      ssrrcc: "images/GDSC.png",
+      ttext: "Junior Designer @ GDSC",
+      dtext: `I was selected as a Junior Designer in the beginning and later was incorporated in the core team of session 2022-23 as a Designer. I have contributed in conducting sessions and designing schwags and instagram posts with fellow team members.`
     },
   ]
 
@@ -84,32 +88,32 @@ const App = () => {
   // ]
 
 
-  const pro=[
+  const pro = [
     {
       id: "1",
       ssrrcc: "images/referKaro.png",
       ttext: `ReferKaro`,
-      dtext:`This solution was designed during HackByte2.0, organized by IIIT Jabalpur. The project focused on ensuring user anonymity.`,
+      dtext: `This solution was designed during HackByte2.0, organized by IIIT Jabalpur. The project focused on ensuring user anonymity.`,
       link: `https://devfolio.co/projects/referkaro-bc17`
     },
     {
       id: "2",
       ssrrcc: "images/baatcheet.png",
       ttext: `BaatCheet`,
-      dtext:`A Real-Time chat application. Utilized WebSocket technology to enable real-time messaging, the system supports both one-on-one chats and group chats.`,
+      dtext: `A Real-Time chat application. Utilized WebSocket technology to enable real-time messaging, the system supports both one-on-one chats and group chats.`,
       link: `https://github.com/Mazer-08/BaatCheet`
     },
     {
       id: "3",
       ssrrcc: "images/weathermob.png",
       ttext: `WeatherNow`,
-      dtext:`A responsive web application which can provide the weather conditions of any city around the world.`,
+      dtext: `A responsive web application which can provide the weather conditions of any city around the world.`,
       link: `https://weathernowww.netlify.app/`
     },
   ]
   return (
     <div className='App'>
-        {/* <BrowserRouter>
+      {/* <BrowserRouter>
           <Navbar/>
           <Routes>
             <Route exact path="/" element = {<Header/>}></Route>
@@ -124,14 +128,14 @@ const App = () => {
           </Routes>
           <Footer/>
         </BrowserRouter> */}
-        <Navbar/>
-        <Header/>
-        <Skill id="project" title="My Projects" arr={pro} flag="1"/>
-        {/* <Skill id="skills" title="Front-End Skills" arr={dev} flag="1" git="https://mazer-08.github.io/Portfolio/"/> */}
-        <Skill title="Designing Skills" arr={design} flag="0"/>
-        <Hero id="codingProfiles"/>
-        <About id="about"/>
-        <Footer/>
+      <Navbar />
+      <Header />
+      <Skill id="project" title="My Projects" arr={pro} flag="1" />
+      {/* <Skill id="skills" title="Front-End Skills" arr={dev} flag="1" git="https://mazer-08.github.io/Portfolio/"/> */}
+      <Skill title="Vibe Designing" arr={design} flag="0" />
+      <Hero id="codingProfiles" />
+      <About id="about" />
+      <Footer />
     </div>
   )
 }

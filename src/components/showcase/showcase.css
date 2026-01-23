@@ -1,4 +1,4 @@
-.celement{
+.celement {
 	display: grid;
 	grid-template-columns: 0.3fr 1.2fr 1.2fr 0.3fr;
 	padding: 1rem 1rem;
@@ -11,13 +11,14 @@
 
 
 
-.celement .left{
+.celement .left {
 	grid-column-start: 2;
 	width: 100%;
 }
-.celement .left .img img{
+
+.celement .left .img img {
 	/* size: 20%; */
-    border-radius: 6px;
+	border-radius: 6px;
 	margin: auto auto;
 }
 
@@ -28,52 +29,72 @@
 
 
 
-.celement .right{
-    grid-column-start: 3;
-    width: 100%;
-    margin: auto 1rem;
+.celement .right {
+	grid-column-start: 3;
+	width: 100%;
+	margin: auto 1rem;
 }
-.celement .right .title .title-text{
+
+.celement .right .title .title-text {
 	font-family: var(--font-text);
 	font-size: 2rem;
-    text-align: center;
-	color: var(--color-bg);
+	text-align: center;
+	color: #ffffff;
 	padding-top: 0.5rem;
-    padding-bottom: 1rem;
+	padding-bottom: 1rem;
 }
-.celement .right .description .description-text{
-    font-family: var(--font-text);
+
+.celement .right .description .description-text {
+	font-family: var(--font-text);
 	font-size: 1rem;
-    text-align: center;
-	color: aqua;
+	text-align: center;
+	color: #e0e0e0;
 }
-.celement .right .description .description-text p a{
-	color: ;
-	background-color: #1976D2;
-	padding: 0.5%;
-	border-radius: 6px;
+
+.celement .right .description .btn-container {
+	margin-top: 1.5rem;
+	display: flex;
+	justify-content: center;
 }
-.celement .right .btn{
-    font-family: var(--font-text);
+
+.project-btn {
+	text-decoration: none;
+	font-family: var(--font-text);
+	color: white;
+	background: linear-gradient(90deg, #AE67FA, #F49867);
+	padding: 0.8rem 1.5rem;
+	border-radius: 9999px;
+	font-weight: 600;
+	transition: transform 0.2s ease, box-shadow 0.2s ease;
+	display: inline-block;
+}
+
+.project-btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 15px rgba(244, 152, 103, 0.4);
+}
+
+.celement .right .btn {
+	font-family: var(--font-text);
 	font-size: 1rem;
-    text-align: center;
+	text-align: center;
 }
 
 
 
 @media screen and (max-width: 720px) {
-	.celement{
+	.celement {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 2rem;
 	}
 
-	.celement .right .title .title-text{
+	.celement .right .title .title-text {
 		font-family: var(--font-text);
 		font-size: 1.4rem;
 		text-align: center;
-		color: var(--color-bg);
+		color: #ffffff;
 		padding-top: 0.5rem;
 		padding-bottom: 1rem;
 	}
@@ -88,23 +109,23 @@
 
 
 @media screen and (max-width: 425px) {
-	.celement{
+	.celement {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		padding-bottom: 2rem;
 	}
 
-	.celement .right .title .title-text{
+	.celement .right .title .title-text {
 		font-family: var(--font-text);
 		font-size: 1.05rem;
 		text-align: center;
-		color: var(--color-bg);
+		color: #ffffff;
 		padding-top: 0.5rem;
 		padding-bottom: 1rem;
 	}
 
-	.celement .right .description .description-text{
+	.celement .right .description .description-text {
 		font-family: var(--font-text);
 		font-size: 0.9rem;
 		text-align: center;
